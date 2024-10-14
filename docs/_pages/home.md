@@ -3,36 +3,43 @@ layout: splash
 permalink: /
 hidden: true
 header:
-  overlay_color: "#5e616c"
-  overlay_image: /assets/images/mm-home-page-feature.jpg
+  overlay_color: "#3c3f45" # A darker overlay color for better contrast
+  overlay_image: /assets/images/your-custom-image.jpg # Replace with your custom image path
+  overlay_filter: "0.5" # Adjust transparency of overlay
   actions:
-    - label: "<i class='fas fa-download'></i> Install now"
-      url: "/docs/quick-start-guide/"
+    - label: "<i class='fas fa-download'></i> View Portfolio"
+      url: "/portfolio/" # Link to your portfolio
+    - label: "<i class='fas fa-address-card'></i> Contact"
+      url: "/contact/" # Link to your contact page
 excerpt: >
-  A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
-  <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.26.2">Latest release v4.26.2</a></small>
+  Welcome to the official site of Daniel Folino, a software engineer specializing in cutting-edge technology and innovative solutions. Explore my portfolio, recent projects, and get in touch!<br />
+  <small>Discover my work and collaborations across the tech landscape.</small>
 feature_row:
-  - image_path: /assets/images/mm-customizable-feature.png
-    alt: "customizable"
-    title: "Super customizable"
-    excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
-    url: "/docs/configuration/"
+  - image_path: /assets/images/project-1.png
+    alt: "Project 1"
+    title: "Innovative Project 1"
+    excerpt: "A detailed look at how I used cutting-edge technology to solve complex problems."
+    url: "/projects/project-1/"
+    btn_class: "btn--primary"
+    btn_label: "See project"
+  - image_path: /assets/images/project-2.png
+    alt: "Project 2"
+    title: "Creative Solutions in Project 2"
+    excerpt: "How I developed creative solutions in this project using modern development frameworks."
+    url: "/projects/project-2/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/mm-responsive-feature.png
-    alt: "fully responsive"
-    title: "Responsive layouts"
-    excerpt: "Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
-    url: "/docs/layouts/"
+  - image_path: /assets/images/project-3.png
+    alt: "Project 3"
+    title: "Collaborative Project 3"
+    excerpt: "Collaboration and innovation combined to achieve successful results in this project."
+    url: "/projects/project-3/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
-  - image_path: /assets/images/mm-free-feature.png
-    alt: "100% free"
-    title: "100% free"
-    excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
-    url: "/docs/license/"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"      
+    btn_label: "Discover more"
+---
+
+{% include feature_row %}
+     
 ---
 
 {% include feature_row %}
